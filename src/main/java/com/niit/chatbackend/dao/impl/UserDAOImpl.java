@@ -33,6 +33,16 @@ public class UserDAOImpl implements UserDAO {
 		return query.list();
 	}
 
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	@Transactional
 	public boolean save(User user) {
 		// TODO Auto-generated method st
@@ -46,6 +56,23 @@ public class UserDAOImpl implements UserDAO {
 		return true;
 	}
 
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	@Transactional
 	public boolean update(User user) {
 		// TODO Auto-generated method stub

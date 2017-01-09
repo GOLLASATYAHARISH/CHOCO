@@ -12,7 +12,7 @@ import org.springframework.stereotype.Component;
 
 @Entity
 @Component
-@Table(name="C_USER_DETAILS")
+@Table(name="CC_user")
 public class User {
 	@Id
 	private String id;
@@ -23,7 +23,7 @@ public class User {
 	private String batch;
 	private String Address;
 	private String role;
-	@Column(name="is_Online")
+	/*@Column(name="is_Online")*/
 	private char is_Online;
 	private char status;
 	private String reason;

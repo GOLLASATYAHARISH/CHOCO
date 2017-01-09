@@ -37,7 +37,7 @@ public class ApplicationContextConfig {
 		DriverManagerDataSource ds= new DriverManagerDataSource();
 		ds.setDriverClassName("Oracle.jdbc.driver.OracleDriver");
 		ds.setUrl("jdbc:oracle:thin:@localhost:1521:XE");
-		ds.setUsername("harish");
+		ds.setUsername("SYSTEM");
 		ds.setPassword("choco");
 		Properties cp= new Properties();
 		cp.setProperty("hibernate.dialect","org.hibernate.dialect.Oracle10gDialect");

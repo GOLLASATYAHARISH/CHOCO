@@ -14,6 +14,8 @@ import org.springframework.web.bind.annotation.RestController;
 import com.niit.chatbackend.dao.impl.UserDAOImpl;
 import com.niit.models.User;
 
+
+
 @RestController
 public class UserController {
 	@Autowired
@@ -22,6 +24,16 @@ public class UserController {
 	@Autowired
 	UserDAOImpl uDAO;
 	
+	@RequestMapping(value="/AddUsers",method=RequestMethod.POST,headers="accept=appliacation/json")
+	public void save(@RequestBody User u){
+		
+	 uDAO.save(u);
+	
+		
+		
+	}
+	
+	/*
 	@RequestMapping("/USERS")
   public ResponseEntity<List<User>> getAllUsers()
   {
@@ -68,5 +80,5 @@ public class UserController {
 	}
 	
 	
-	
+*/	
 }
